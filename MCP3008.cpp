@@ -37,8 +37,9 @@ int MCP3008::readADC(int adcnum) {
   digitalWrite(_clockpin, LOW); //  # start clock low
   digitalWrite(_cspin, LOW); //     # bring CS low
 
-  int commandout = adcnum;
-  commandout |= 0x18; //  # start bit + single-ended bit
+  int commandout = adcnum; // # commandout equals addresses to be read
+  //commandout |= 0x18; //  # start bit + single-ended bit
+  commandout |=0x8; // # start bit + differential inputs (10000)
   commandout <<= 3; //    # we only need to send 5 bits here
  
   for (int i=0; i<5; i++) {
