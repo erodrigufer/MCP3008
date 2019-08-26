@@ -1,9 +1,9 @@
 /*
-  MCP3008.cpp - Library for communicating with MCP3008 Analog to digital converter.
-  Created by Uros Petrevski, Nodesign.net 2013
-  Released into the public domain.
+  MCP3008.cpp is an Arduino library to communicate with the MCP3008 A/D converter. 
+  Created by Uros Petrevski, Nodesign.net 2013. Released into the public domain. 
+  Additional modifications and additions by erodrigufer 2019.
   
-  ported from Python code originaly written by Adafruit learning system for rPI :
+  Ported from Python code originally written by Adafruit for RPi:
   http://learn.adafruit.com/send-raspberry-pi-data-to-cosm/python-script
 */
 
