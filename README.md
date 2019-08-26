@@ -1,25 +1,30 @@
-MCP3008 is Arduino Library for communicating with MCP3008 Analog to digital converter.
-Created by Uros Petrevski, Nodesign.net 2013
-Released into the public domain.
+MCP3008 is an Arduino library to communicate with the MCP3008 A/D converter.
+Created by Uros Petrevski, Nodesign.net 2013. Released into the public domain.
+Additional modifications and additions by erodrigufer 2019.
 
-ported from Python code originaly written by Adafruit learning system for rPI :
-http://learn.adafruit.com/send-raspberry-pi-data-to-cosm/python-script
+Ported from the [Python code originally by Adafruit for the RPi](http://learn.adafruit.com/send-raspberry-pi-data-to-cosm/python-script):
 
 
-MCP3008 VDD -> 5V or 3.3V 
+# Pin connections
 
-MCP3008 VREF -> 5V or 3.3V
+MCP3008 Pin | Arduino Pin
+------------|------------
+VDD | 5V or 3.3V 
+VREF |  any voltage value between 0,25V and VDD *
+AGND | 
+CLK | Digital Output
+DOUT | Digital Input
+DIN | Digital Output
+CS | Digital Output
+DGND | GND
 
-MCP3008 AGND -> GND
+\*Check datasheet pg. 3
+ 
+# Installing the library
 
-MCP3008 CLK -> arduino gpio
+Copy all files to the _libraries_ folder in your Arduino main folder.
 
-MCP3008 DOUT -> arduino gpio
+# TO DO
 
-MCP3008 DIN -> arduino gpio
-
-MCP3008 CS -> arduino gpio
-
-MCP3008 DGND -> GND
-
-Copy files inside "libraries" folder in principal sketch folder (where are all your sketches)
+- [x] Implement differential input function
+- [ ] Comment code from Uros / Clean code practices
