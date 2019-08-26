@@ -13,8 +13,8 @@ VDD | 5V or 3.3V
 VREF |  any voltage value between 0,25V and VDD *
 AGND | 
 CLK | Digital Output
-DOUT | Digital Input
-DIN | Digital Output
+DOUT (MISO) | Digital Input
+DIN (MOSI) | Digital Output
 CS | Digital Output
 DGND | GND
 
