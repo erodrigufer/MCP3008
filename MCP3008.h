@@ -11,6 +11,7 @@
 #define MCP3008_h
 
 #include "Arduino.h"
+#include "digitalWriteFast.h"
 
 class MCP3008
 {
