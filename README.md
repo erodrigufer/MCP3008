@@ -28,3 +28,4 @@ Copy all files to the _libraries_ folder in your Arduino main folder.
 
 - [x] Implement differential input function
 - [ ] Comment code from Uros / Clean code practices
+- [ ] Write a guide on to how to properly use MCP3008 with Arduino
