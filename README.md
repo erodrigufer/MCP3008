@@ -4,6 +4,7 @@ Additional modifications and additions by erodrigufer 2019.
 
 Ported from the [Python code originally by Adafruit for the RPi](http://learn.adafruit.com/send-raspberry-pi-data-to-cosm/python-script):
 
+Branch fastCommands was implemented by erodrigufer to increase the communication speed with the MCP3008. The standard Arduino commands were replaced by custom commands to reduce the execution time of, for example, reading a pin.
 
 # Pin connections
 
@@ -27,5 +28,7 @@ Copy all files to the _libraries_ folder in your Arduino main folder.
 # TO DO
 
 - [x] Implement differential input function
+- [ ] replace digitalWrite with a faster custom command
+- [ ] replace digitalRead with a faster custom command
 - [ ] Comment code from Uros / Clean code practices
 - [ ] Write a guide on to how to properly use MCP3008 with Arduino
